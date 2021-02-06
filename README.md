@@ -12,11 +12,11 @@
 
 航班主页截图：
 
-![机场首页截图](E:\WebScraping\1.png)
+![机场首页截图](1.png)
 
 航班详情页面截图：
 
-![网站航班信息截图](E:\WebScraping\2.png)
+![网站航班信息截图](2.png)
 
 ![爬取按钮截图](3.png)
 
@@ -137,6 +137,8 @@ f1.close()
 
 ### 附录
 
+系北航18级软件学院计算机网络大作业
+
 ```python
 # -*- coding: utf-8 -*-
 # @Time    : 12.2
@@ -193,7 +195,7 @@ def work():
         JsonData["Airline"].append(list_element[3])
         JsonData["Terminal"].append(list_element[4])
         JsonData["Status"].append(list_element[5])
-      
+    
     # 获取页面上所有的button信息
     button = driver.find_elements_by_tag_name('button')
     time.sleep(1)

@@ -11,7 +11,8 @@ import json
 
 # 爬取的页数
 Pages_num = 3
-# 间隔时间
+# 间隔时间, 表示隔多长时间爬取一次
+# 代码中使用 Ctrl + Z 进行键盘中断即可退出
 Intervel_time = 600
 # 添加文件输出路径，会覆盖文件之中已有的数据！
 f1 = open("HeathrowAriport-Flights.json", "w+")
@@ -42,7 +43,7 @@ def work():
     if(len(res) == 0):
         return
     list_element = res[0].text.split('\n')
-    #print(list_element)
+    print(list_element)
 
     # 存储数据
     for e in res:
